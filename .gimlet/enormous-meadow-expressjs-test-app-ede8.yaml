@@ -1,0 +1,11 @@
+app: expressjs-test-app-ede8
+env: enormous-meadow
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.52.0
+values:
+  gitRepository: laszlocph/expressjs-test-app
+  gitSha: '{{ .SHA }}'
+  replicas: 8
