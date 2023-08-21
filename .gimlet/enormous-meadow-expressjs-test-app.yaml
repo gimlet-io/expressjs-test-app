@@ -12,3 +12,5 @@ values:
   gitCloneUrl: https://github.com/laszlocph/reactjs-test-app.git
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
+  ingress:
+    host: aa.hello.trial
