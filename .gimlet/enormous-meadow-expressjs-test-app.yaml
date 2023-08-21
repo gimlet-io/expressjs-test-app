@@ -9,6 +9,6 @@ values:
   buildImage: node:latest
   buildScript: npm install && npm run build
   builtAssets: build/
-  gitCloneUrl: https://github.com/laszlocph/expressjs-test-app.git
+  gitCloneUrl: https://github.com/laszlocph/reactjs-test-app.git
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
