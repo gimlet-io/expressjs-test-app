@@ -6,6 +6,7 @@ chart:
   name: static-site
   version: 0.52.0
 values:
+  buildImage: "node:latest"
   buildScript: npm install && npm run build
   builtAssets: build/
   gitCloneUrl: https://github.com/laszlocph/reactjs-test-app.git
