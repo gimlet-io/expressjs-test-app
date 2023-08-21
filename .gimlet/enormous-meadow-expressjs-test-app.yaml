@@ -4,7 +4,7 @@ namespace: default
 chart:
   repository: https://chart.onechart.dev
   name: static-site
-  version: 0.52.0
+  version: 0.54.0
 values:
   buildImage: node:latest
   buildScript: npm install && npm run build
