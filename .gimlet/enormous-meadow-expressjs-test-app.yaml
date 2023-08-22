@@ -13,4 +13,4 @@ values:
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
   ingress:
-    host: aa.hello.trial
+    host: aa.hello1.trial
