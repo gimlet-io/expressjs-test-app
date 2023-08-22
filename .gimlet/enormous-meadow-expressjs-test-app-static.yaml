@@ -4,7 +4,7 @@ namespace: default
 chart:
   repository: https://chart.onechart.dev
   name: static-site
-  version: 0.56.0
+  version: 0.57.0
 values:
   gitCloneUrl: https://github.com/laszlocph/reactjs-test-app.git
   gitRepository: laszlocph/expressjs-test-app
