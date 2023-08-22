@@ -6,6 +6,12 @@ chart:
   name: static-site
   version: 0.57.0
 values:
+  buildScript: |-
+    # !/usr/bin/env bash
+
+    npm install
+    npm run build
+    echo hello
   gitCloneUrl: https://github.com/laszlocph/reactjs-test-app.git
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
