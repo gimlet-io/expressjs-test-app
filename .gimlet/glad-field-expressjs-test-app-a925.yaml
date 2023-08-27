@@ -8,4 +8,4 @@ chart:
 values:
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
-  replicas: 3
+  replicas: 5
