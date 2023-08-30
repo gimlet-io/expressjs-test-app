@@ -8,7 +8,4 @@ chart:
 values:
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
-  image:
-    repository: 127.0.0.1:32447/{{ .APP }}
-    tag: '{{ .SHA }}'
   replicas: 2
