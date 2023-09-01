@@ -11,4 +11,4 @@ values:
   image:
     repository: 127.0.0.1:32447/expressjs-test-app-4906
     tag: '{{ .SHA }}'
-  replicas: 6
+  replicas: 10
