@@ -1,0 +1,15 @@
+app: expressjs-test-app
+env: trusted-morning
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.57.0
+values:
+  containerPort: 9898
+  gitRepository: laszlocph/expressjs-test-app
+  gitSha: '{{ .SHA }}'
+  image:
+    repository: ghcr.io/stefanprodan/podinfo
+    tag: 6.4.1
+  replicas: 2
