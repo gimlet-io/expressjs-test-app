@@ -1,0 +1,17 @@
+app: expressjs-test-app-7f0b
+env: exact-morning
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: static-site
+  version: 0.57.0
+values:
+  buildScript: |-
+    # !/usr/bin/env bash
+
+    npm install
+    npm run build
+    echo hello
+  gitCloneUrl: https://github.com/laszlocph/expressjs-test-app.git
+  gitRepository: laszlocph/expressjs-test-app
+  gitSha: '{{ .SHA }}'
