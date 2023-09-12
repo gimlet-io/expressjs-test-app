@@ -6,6 +6,7 @@ chart:
   name: onechart
   version: 0.57.0
 values:
+  containerPort: 3000
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
   image:
