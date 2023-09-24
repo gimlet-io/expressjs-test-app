@@ -8,5 +8,7 @@ chart:
 values:
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
+  image:
+    tag: latest
   resources:
     ignoreLimits: true
