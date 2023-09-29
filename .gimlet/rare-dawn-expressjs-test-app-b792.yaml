@@ -1,0 +1,10 @@
+app: expressjs-test-app-b792
+env: rare-dawn
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.57.0
+values:
+  gitRepository: laszlocph/expressjs-test-app
+  gitSha: '{{ .SHA }}'
