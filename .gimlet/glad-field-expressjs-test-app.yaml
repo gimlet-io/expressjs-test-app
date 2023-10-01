@@ -8,5 +8,7 @@ chart:
 values:
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
+  ingress:
+    host: alma.gimlet.io
   resources:
     ignoreLimits: true
