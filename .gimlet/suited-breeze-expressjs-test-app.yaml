@@ -9,8 +9,7 @@ values:
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
   image:
-    repository: 127.0.0.1:32447/expressjs-test-app
-    tag: '{{ .SHA }}'
+    tag: no-such-tag
   replicas: 2
   resources:
     ignoreLimits: true
