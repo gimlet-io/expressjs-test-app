@@ -8,8 +8,6 @@ chart:
 values:
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
-  image:
-    repository: nginx1
   replicas: 3
   resources:
     ignoreLimits: true
