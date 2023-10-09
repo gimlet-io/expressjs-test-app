@@ -11,5 +11,5 @@ values:
   gitSha: '{{ .SHA }}'
   image:
     repository: 127.0.0.1:32447/{{ .APP }}
-    tag: '{{ .SHA }}'
-  replicas: 1
+    tag: '{{ .SHA }}123'
+  replicas: 3
