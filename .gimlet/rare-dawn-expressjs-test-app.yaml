@@ -10,8 +10,8 @@ values:
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
   image:
-    repository: 127.0.0.1:32447/expressjs-test-app
-    tag: '{{ .SHA }}'
-  replicas: 1
+    repository: nginx
+    tag: 1.19.3
+  replicas: 3
   resources:
     ignoreLimits: true
