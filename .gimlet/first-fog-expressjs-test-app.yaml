@@ -1,0 +1,19 @@
+app: expressjs-test-app
+env: first-fog
+namespace: default
+deploy:
+  event: push
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.58.0
+values:
+  containerPort: 3000
+  gitRepository: laszlocph/expressjs-test-app
+  gitSha: '{{ .SHA }}'
+  image:
+    repository: ghcr.io/laszlocph/expressjs-test-app
+    tag: '{{ .SHA }}'
+  replicas: 1
+  resources:
+    ignoreLimits: true
