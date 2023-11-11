@@ -6,7 +6,7 @@ deploy:
 chart:
   repository: https://chart.onechart.dev
   name: onechart
-  version: 0.58.0
+  version: 0.59.0
 values:
   containerPort: 8080
   gitRepository: laszlocph/expressjs-test-app
