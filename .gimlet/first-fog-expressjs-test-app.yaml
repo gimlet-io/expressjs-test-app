@@ -22,9 +22,9 @@ values:
     host: expressjs-test-app.demo
     path: /
     tlsEnabled: false
-  issues: jira.mycompany.com
-  logs: grafana.mycompany.com/loki
-  metrics: grafana.mycompany.com
+  issues: https://jira.mycompany.com
+  logs: https://grafana.mycompany.com/loki
+  metrics: https://grafana.mycompany.com
   name: ""
   ownerIm: ""
   ownerName: backend-team
