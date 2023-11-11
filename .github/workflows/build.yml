@@ -40,7 +40,7 @@ jobs:
         platforms: linux/amd64
         push: true
         tags: |
-          ghcr.io/laszlocph/gais:${{ github.sha }}
+          ghcr.io/laszlocph/expressjs-test-app:${{ github.sha }}
   deploy-first-fog:
     name: 🚀 Deploy / First-Fog
     runs-on: ubuntu-latest
