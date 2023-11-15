@@ -19,7 +19,7 @@ values:
   ingress:
     annotations:
       kubernetes.io/ingress.class: nginx
-    host: expressjs-test-app.demo
+    host: $expressjs-test-app.demo
     path: /
     tlsEnabled: false
   issues: https://jira.mycompany.com
