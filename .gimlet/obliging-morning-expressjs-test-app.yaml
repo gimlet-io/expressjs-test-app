@@ -7,11 +7,20 @@ chart:
   version: 0.60.0
 values:
   containerPort: 80
+  description: ""
+  documentation: ""
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
   image:
     repository: 127.0.0.1:32447/expressjs-test-app
     tag: '{{ .SHA }}'
+  issues: ""
+  logs: ""
+  metrics: ""
+  name: ""
+  ownerIm: ""
+  ownerName: laszlo
   replicas: 1
   resources:
     ignoreLimits: true
+  traces: ""
