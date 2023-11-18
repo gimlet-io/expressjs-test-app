@@ -1,4 +1,4 @@
-app: expressjs-test-app-{{ .BRANCH }}
+app: expressjs-test-app-{{ .BRANCH | sanitizeDNSName }}
 env: glad-field
 namespace: default
 chart:
