@@ -1,0 +1,14 @@
+app: expressjs-test-app-{{ .BRANCH }}
+env: glad-field
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.57.0
+values:
+  gitRepository: laszlocph/expressjs-test-app
+  gitSha: '{{ .SHA }}'
+  ingress:
+    host: alma.gimlet.io
+  resources:
+    ignoreLimits: true
