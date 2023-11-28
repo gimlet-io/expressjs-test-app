@@ -31,3 +31,7 @@ values:
   secretEnabled: false
   spreadAcrossNodes: true
   traces: ""
+  vars:
+    newKey: New Value
+    newKeysegfewrgreg: New Valugregregree
+  volumes: []
