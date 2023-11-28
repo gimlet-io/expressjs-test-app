@@ -18,7 +18,7 @@ values:
   logs: ""
   metrics: ""
   name: cart-backend
-  ownerIm: '#backend-team'
+  ownerIm: '@laszlo'
   ownerName: backend-team
   podAnnotations: {}
   podDisruptionBudgetEnabled: true
