@@ -10,7 +10,7 @@ values:
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
   image:
-    repository: nginxqwfwfe
+    repository: nginx
     tag: 1.19.3
   replicas: 1
   resources:
