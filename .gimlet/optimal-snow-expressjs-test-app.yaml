@@ -12,8 +12,8 @@ values:
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
   image:
-    repository: nginxwegergregrehger
-    tag: 1.19.3
+    repository: 127.0.0.1:32447/{{ .APP }}
+    tag: '{{ .SHA }}'
   issues: ""
   logs: ""
   metrics: ""
