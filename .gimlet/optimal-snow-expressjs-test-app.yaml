@@ -6,7 +6,7 @@ chart:
   name: onechart
   version: 0.60.0
 values:
-  containerPort: 80
+  containerPort: 8080
   description: Backend to manage shopping cart state, written in Go
   documentation: ""
   gitRepository: laszlocph/expressjs-test-app
