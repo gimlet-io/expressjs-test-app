@@ -26,8 +26,7 @@ values:
   replicas: 1
   resources:
     ignoreLimits: true
-  sealedSecrets:
-    MY_SECRET: AgAtxD/Y4HIsp/399wNpafx3U6JwG5/sTZA+KNbSSoknoQL4iGp4UcO6SjY7KyFh+YeuabKwk0lxS1nRZ90vXLcM0h5AoKgSEaydu3r4xFmb6Ubv0DxdXQHg4tIF1+vpjDu3qb/w/FPuUCCFl+Z2R9TKpn9wFQtA5GVbppNdSrrb3Iv7k/ZkD+ZQpoLcJTDe3Zezqu9/NwGiUvtkyTA1ZdB7WAaQJcg8pL58xKV1ImwS/oaeam0x8j5b0NkCihF5L0odBcnmSfKKqJ4oNHvwtr9diXUUuIziG9/odUpVJAQLp+h/qHevoGij7UFPN30eP12pb2hPJmHJEfbjOrP2BLVgtM2zDdbS9viCQGCtcOk/OSGLzl4YdSbZZCc7gqzGeCM9NiTWQf3HyZwm7Q5w9aAUs2MJkWqmQBL/Q5yRbSF722pYrZ0EEq+pkSRzykrsMfSp7ab951ZDglDmtB8lwxpG2QKBFEpuzi85kr1z6D6LuIzMED50qKDYelT9liwEVR0JPFXCvM3HkCyk810hDsxnBgEgUcBxRQOUeakkYMADn/GsPKOIEoaFli0OmYviHHzlWUebiklcxxOqRVmNeMaQ/Pmf/hAmBtrIg91xdMXDiIBWJdyWySTZHyDetSRu2AHXvt84NKO80aJtJU1jxf+6oxPo92eik/GJfzH4CEIrx3TKvb5P9Oce7rviaAenaMYVZN5QjwOr
+  sealedSecrets: {}
   secretEnabled: false
   spreadAcrossNodes: true
   traces: ""
