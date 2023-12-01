@@ -28,7 +28,7 @@ values:
     ignoreLimits: true
   sealedSecrets: {}
   secretEnabled: false
-  spreadAcrossNodes: true
+  spreadAcrossNodes: false
   traces: ""
   vars:
     newKey: New Value
