@@ -1,0 +1,18 @@
+app: expressjs-test-app-f0c3
+env: simple-moon
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.60.0
+values:
+  containerPort: 80
+  gitRepository: laszlocph/expressjs-test-app
+  gitSha: '{{ .SHA }}'
+  image:
+    dockerfile: Dockerfile
+    repository: 127.0.0.1:32447/{{ .APP }}
+    tag: '{{ .SHA }}'
+  replicas: 1
+  resources:
+    ignoreLimits: true
