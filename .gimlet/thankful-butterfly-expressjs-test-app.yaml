@@ -6,12 +6,12 @@ chart:
   name: onechart
   version: 0.60.0
 values:
-  containerPort: 80
+  containerPort: 3000
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
   image:
     repository: 127.0.0.1:32447/expressjs-test-app
     tag: '{{ .SHA }}'
-  replicas: 1
+  replicas: 3
   resources:
     ignoreLimits: true
