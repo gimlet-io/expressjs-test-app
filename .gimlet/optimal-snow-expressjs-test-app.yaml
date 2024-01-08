@@ -27,7 +27,8 @@ values:
   replicas: 1
   resources:
     ignoreLimits: true
-  sealedSecrets: {}
+  sealedSecrets:
+    alma: AgApC/c80TGr3V01TQPn+wBmEvZ1cJwhvKw2xAy8E4CtUapRc4va7ZzECSQxq2HvdP558UEDmWnEXv6m56pKwulRVoEYLjZ/Mh/XUzytp7jIMJvNrVIjzlpsq7QpG/PitZ3lTsLzofsDvhGH+rju+OMMggmz76+4aM/xZTg9MDTEYeCJZarF2mJYhQwuSbL+ShV3MdpTF/EX8gHkbn/rRsTgD5x46nyHtUw92h9UvJ2+c5KsKs9qBVuGC3OEzreUsqe+l4XTq0BU3KHAr00rQ0I4UnYzPM+Lb8K14VMq2DUiVN4w9toePF9iAq3u3QuGecHK1vQrFcQ+7ke51LAzAT1xJxBayCRU2LXInkbbzjhkpR6SdCuXTImOrJyw98cKxJhKVlVqChhdJxQyRSUGPrP67F5qj8HmxwetmPmcgi8VxUTbxqLpgKoQI/76P8Dw8P6clPJuPc2eN6jPmcdQL1JcDhPxPs4fOLOsp9rj/CQ8Bidq2E8hfpqDpx1B+O3Oj7eH9BDbC1B58QMZFzzyzRY2NM5yydYMLD37q/Dpo1vMaC37Cwlsx+ZZRUSkdOyHNdVORNfUgKp11L4oa8rxSwMBqLtClw36Oxt4rt1GN59ABLig1e11T6MlFZijaWbJNiNK4U9wuEV296DJAdgOvr4AGfYp2S2ql6uwYlCsRHTDq2DcwbdbqM/T7OFNtASaDxbuPfSUTg==
   secretEnabled: false
   spreadAcrossNodes: false
   traces: ""
