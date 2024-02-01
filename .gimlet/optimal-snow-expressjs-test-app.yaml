@@ -1,6 +1,9 @@
 app: expressjs-test-app
 env: optimal-snow
 namespace: default
+deploy:
+  branch: main
+  event: push
 chart:
   repository: https://chart.onechart.dev
   name: onechart
