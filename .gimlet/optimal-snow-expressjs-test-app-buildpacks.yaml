@@ -13,6 +13,6 @@ values:
     repository: 127.0.0.1:32447/expressjs-test-app-buildpacks
     tag: '{{ .SHA }}'
   imagePullSecrets: []
-  replicas: 1
+  replicas: 3
   resources:
     ignoreLimits: true
