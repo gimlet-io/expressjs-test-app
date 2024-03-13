@@ -15,8 +15,9 @@ values:
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
   image:
-    repository: nginx
-    tag: 1.19.3
+    dockerfile: Dockerfile
+    repository: ghcr.io/laszlocph/expressjs-test-app
+    tag: '{{ .SHA }}'
   issues: ""
   logs: ""
   metrics: ""
@@ -26,7 +27,7 @@ values:
   podAnnotations: {}
   podDisruptionBudgetEnabled: true
   podLabels: {}
-  replicas: 2
+  replicas: 1
   resources:
     ignoreLimits: true
   sealedSecrets:
