@@ -13,7 +13,8 @@ values:
     dockerfile: Dockerfile
     repository: ghcr.io/laszlocph/expressjs-test-app
     tag: '{{ .SHA }}'
-  imagePullSecrets: []
+  imagePullSecrets:
+    - ghcr-registry-secret
   replicas: 3
   resources:
     ignoreLimits: true
