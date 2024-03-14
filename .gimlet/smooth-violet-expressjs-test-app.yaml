@@ -1,0 +1,18 @@
+app: expressjs-test-app
+env: smooth-violet
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.64.0
+values:
+  containerPort: 80
+  gitRepository: laszlocph/expressjs-test-app
+  gitSha: '{{ .SHA }}'
+  image:
+    repository: 127.0.0.1:32447/{{ .APP }}
+    tag: '{{ .SHA }}'
+  imagePullSecrets: []
+  replicas: 1
+  resources:
+    ignoreLimits: true
