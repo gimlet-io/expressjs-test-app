@@ -15,7 +15,7 @@ values:
     strategy: dockerfile
     tag: '{{ .SHA }}'
   imagePullSecrets:
-    - ghcr-registry-secret
+    - ghcr-registry-pullsecret
   replicas: 3
   resources:
     ignoreLimits: true
