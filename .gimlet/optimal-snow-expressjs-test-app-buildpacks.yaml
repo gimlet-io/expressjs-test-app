@@ -10,10 +10,8 @@ values:
   gitRepository: laszlocph/expressjs-test-app
   gitSha: '{{ .SHA }}'
   image:
-    dockerfile: Dockerfile
-    repository: ghcr.io/laszlocph/expressjs-test-app
-    strategy: dockerfile
-    tag: '{{ .SHA }}'
+    repository: nginx
+    tag: 1.19.3
   imagePullSecrets:
     - ghcr-registry-pullsecret
   replicas: 3
