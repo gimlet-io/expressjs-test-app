@@ -27,7 +27,7 @@ values:
   podAnnotations: {}
   podDisruptionBudgetEnabled: true
   podLabels: {}
-  replicas: 1
+  replicas: 2
   resources:
     ignoreLimits: true
   sealedSecrets:
