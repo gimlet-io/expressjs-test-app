@@ -16,7 +16,7 @@ values:
   gitSha: '{{ .SHA }}'
   image:
     dockerfile: Dockerfile
-    repository: ghcr.io/laszlocph/expressjs-test-app
+    repository: 127.0.0.1:32447/{{ .APP }}
     tag: '{{ .SHA }}'
   issues: ""
   logs: ""
