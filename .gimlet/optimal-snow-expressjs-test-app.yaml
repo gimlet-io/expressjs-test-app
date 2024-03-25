@@ -4,7 +4,7 @@ namespace: default
 chart:
   repository: https://chart.onechart.dev
   name: onechart
-  version: 0.60.0
+  version: 0.66.0
 values:
   containerPort: 8080
   description: Backend to manage shopping cart state, written in Go
