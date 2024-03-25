@@ -13,8 +13,12 @@ values:
   gitSha: '{{ .SHA }}'
   image:
     dockerfile: Dockerfile
-    repository: 127.0.0.1:32447/{{ .APP }}
+    registry: ghcrRegistry
+    repository: ghcr.io/laszlocph/{{ .APP }}
+    strategy: dockerfile
     tag: '{{ .SHA }}'
+  imagePullSecrets:
+    - regcred
   issues: ""
   logs: ""
   metrics: ""
@@ -24,7 +28,7 @@ values:
   podAnnotations: {}
   podDisruptionBudgetEnabled: true
   podLabels: {}
-  replicas: 3
+  replicas: 1
   resources:
     ignoreLimits: true
   sealedSecrets:
