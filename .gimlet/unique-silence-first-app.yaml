@@ -13,6 +13,6 @@ values:
     repository: nginx
     tag: 1.19.3
   imagePullSecrets: []
-  replicas: 2
+  replicas: 1
   resources:
     ignoreLimits: true
