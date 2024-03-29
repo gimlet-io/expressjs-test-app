@@ -19,10 +19,5 @@ values:
     ignoreLimits: true
   sealedSecrets:
     secrets_emhass.yaml: AgDDP5UGoKpLGGDkEfIoqAux/3B1YeZNJoOyCsdo3BRJdn7IvInPSeFVjyg4c2cwe7HR8p3JHRpxfhwT8okAIbso86zthRF98o23jZsb/3blX6iJpthO6TBzDHDHpGjKTsQUU7m+bnxX/IJPYHsOGn+rmFn8QQw4AGAqD5CY5rzQhzeu3/0Gt3/vHhZ8/Fj8KmCbaEvoZOakarOcTiyBLQW6naX31pW73THEAfhCpdv8aLFalz7v1HImajjsU/Yz+JHrsaW0a0RY1uUfW40w2DaN/9MGaHg+jrEzRYQ2Z+VewlThzTJb5sZGg44hs7RLDdyU0VgMHGwF35bLJb2q5Y8cMSk/FaDeyowt96NdZNV+F4b/U3fLqBbLeYfSCCZCs0Q+FSGpJ7UusZXV04+oAgcikSR5yzOsv+xQ34b1GSRfopgW1O2kOL1D8ZGk3Nslu3QnTKBmKW4b4rzxrtuC8Rok5N5jofzzC7lxUxGof/Sc8NFidP1JBe8T3Cd3QwDdSIegnqbcN0PhM6Qfi/e+FMCNs7dkHQLgRb3QlcmgNq2iDFJqrpqD/kX+1Nt/asSVYHftq0eEwKFbNn+FodfznFVjdMbfzcpAxx/DgPwRLrgZ4C8CmZ4AnkrttqEjyiYBHF/CWr7FHIcoQjvhqqkr1tUrjh7sMRmiXlqvjUhIQI9G7nfzgSHVHKKtPnk0cTIyHfqtZpch/20ZbRQAYeQtvH4yPY5+0BNfjpHppjzWxU9rzjBvj0VtCsAgaGBTYIoYSe2Cpnu+GFggoSoGGQKk921F2mDGiQ6gVlEpojnr4oSjMc2JKEloFkyyKx0FUS6wkAuwiDLue4QQXipcKSrRbFuZ8MrjYdRHuiC5SqKRYihm0251YsMM1qlb+TxRAMwtOWpU9pjUYF1sgJBvuNtuV9O4hYxxTSIpkSs72JqKBxzW0GnQoyNci8fp2VBjeuB0ORindg/17EjmpUeVpZlhKzZsMOkJW9Ex6DESfQn8dK8S5QtwIK6t4398XVu8zzMQ1VPaq745pObMpz1HHkspF2MmywynbhkJWE5w05NQngqzbSiHEndjrN9gprz7sLjbl1/M3+b8/ZPs2GS5zVX/dtXd1zqmhtDAZF3D3zhXwHN4MwW+NSgrOVjPTaOFtIlJhocrR4LSaQ1YhXg=
-  secretEnabled: true
-  volumes:
-    - existingConfigMap: emhass
-      name: data
-      path: /app/secrets_emhass.yaml
-      pvcAnnotations: {}
-      subPath: secrets_emhass.yaml
+  secretEnabled: false
+  volumes: []
