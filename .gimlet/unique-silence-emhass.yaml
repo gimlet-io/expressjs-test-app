@@ -27,6 +27,7 @@ values:
       path: /app
   volumes:
     - emptyDir: true
-      name: volume
+      name: data
       path: /app/data
       pvcAnnotations: {}
+      size: 1Gi
