@@ -24,5 +24,6 @@ values:
       name: secrets
       path: /app/secrets_emhass.yaml
   vars:
+    EMHASS_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhNDQ5NDBiNDhjNmU0MjdhOTVkZjlhOWVlNTk1NjRmYSIsImlhdCI6MTcwOTkzMzkyNywiZXhwIjoyMDI1MjkzOTI3fQ.m05m0IIFysz_7xmI6edExBo6KeoLISIMNQAGwOAfIuE
     EMHASS_URL: http://192.168.0.118:8123
   volumes: []
