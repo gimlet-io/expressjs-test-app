@@ -26,8 +26,7 @@ values:
       name: secrets
       path: /app
   volumes:
-    - emptyDir: true
+    - existingClaim: emhass-data
       name: data
       path: /app/data
       pvcAnnotations: {}
-      size: 1Gi
