@@ -26,6 +26,6 @@ values:
       name: secrets
       path: /app/secrets
   vars:
-    CONFIG_PATH: /app/secrets
-    SECRETS_PATH: /app/secrets
+    CONFIG_PATH: /app/secrets/config_emhass.yaml
+    SECRETS_PATH: /app/secrets/secrets_emhass.yaml
   volumes: []
