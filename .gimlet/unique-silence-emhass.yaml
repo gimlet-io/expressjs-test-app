@@ -27,6 +27,6 @@ values:
       path: /app
   volumes:
     - emptyDir: true
-      name: ephemeral-volume
+      name: volume
       path: /app/data
       pvcAnnotations: {}
