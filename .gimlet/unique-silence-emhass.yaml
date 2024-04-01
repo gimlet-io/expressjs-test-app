@@ -33,4 +33,3 @@ values:
       path: /app/data
       pvcAnnotations: {}
       size: 1Gi
-      storageClass: nfs-csi
