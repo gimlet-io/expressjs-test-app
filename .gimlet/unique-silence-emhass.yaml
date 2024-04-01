@@ -28,8 +28,4 @@ values:
   vars:
     CONFIG_PATH: /app/secrets/config_emhass.yaml
     SECRETS_PATH: /app/secrets/secrets_emhass.yaml
-  volumes:
-    - existingClaim: emhass-data
-      name: data
-      path: /app/data
-      pvcAnnotations: {}
+  volumes: []
