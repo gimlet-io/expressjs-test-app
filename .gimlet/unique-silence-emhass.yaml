@@ -14,7 +14,7 @@ values:
     repository: davidusb/emhass-docker-standalone
     tag: 0.8.4
   imagePullSecrets: []
-  replicas: 2
+  replicas: 1
   resources:
     ignoreLimits: true
   sealedFileSecrets:
