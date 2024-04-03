@@ -2,9 +2,7 @@ app: expressjs-test-app-buildpacks
 env: optimal-snow
 namespace: default
 chart:
-  repository: https://chart.onechart.dev
-  name: onechart
-  version: 0.64.0
+  name: https://github.com/gimlet-io/onechart.git?branch=simplified-schema&path=/charts/onechart/
 values:
   containerPort: 3000
   gitRepository: laszlocph/expressjs-test-app
