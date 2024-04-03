@@ -34,3 +34,7 @@ values:
       path: /app/data
       pvcAnnotations: {}
       size: 1Gi
+    - emptyDir: true
+      name: ephemeral-volume
+      path: /app
+      pvcAnnotations: {}
