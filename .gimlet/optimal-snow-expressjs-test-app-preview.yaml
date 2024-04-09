@@ -1,0 +1,18 @@
+app: expressjs-test-app-preview
+env: optimal-snow
+preview: true
+namespace: default
+chart:
+  name: https://github.com/gimlet-io/onechart.git?branch=simplified-schema&path=/charts/onechart/
+values:
+  gitRepository: laszlocph/expressjs-test-app
+  gitSha: '{{ .SHA }}'
+  image:
+    registry: builtInRegistry
+    repository: 127.0.0.1:32447/expressjs-test-app-preview
+    strategy: buildpacks
+    tag: '{{ .SHA }}'
+  ingress:
+    host: expressjs-test-app-preview.gimlet.app
+  resources:
+    ignoreLimits: true
