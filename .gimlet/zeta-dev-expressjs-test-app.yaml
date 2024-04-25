@@ -13,8 +13,7 @@ values:
     dockerfile: ""
     repository: ghcr.io/sorsops/expressjs-test-app
     tag: sha-{{ .SHA }}
-  imagePullSecrets:
-    - ghcr-login-secret
+  imagePullSecrets: []
   replicas: 1
   resources:
     ignoreLimits: true
