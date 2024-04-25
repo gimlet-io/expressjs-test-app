@@ -11,7 +11,7 @@ values:
   gitSha: '{{ .SHA }}'
   image:
     dockerfile: ""
-    repository: ghcr.io/SorsOps/expressjs-test-app
+    repository: ghcr.io/sorsops/expressjs-test-app
     tag: sha-{{ .SHA }}
   imagePullSecrets:
     - ghcr-login-secret
