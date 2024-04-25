@@ -12,8 +12,9 @@ values:
   gitRepository: SorsOps/expressjs-test-app
   gitSha: '{{ .SHA }}'
   image:
-    repository: ghcr.io/SorsOps /expressjs-test-app
+    repository: ghcr.io/SorsOps/expressjs-test-app
     tag: '{{ .SHA }}'
+    dockerfile: ''
   imagePullSecrets:
     - ghcr-login-secret
   issues: https://github.com/SorsOps/expressjs-test-app/issues
