@@ -31,7 +31,7 @@ jobs:
       uses: docker/metadata-action@v5
       with:
         tags: |
-          type=sha
+          type=sha,format=long
         images: |
           ghcr.io/SorsOps/expressjs-test-app
 
@@ -48,6 +48,5 @@ jobs:
             GIMLET_SERVER: ${{ secrets.GIMLET_SERVER }}
             GIMLET_TOKEN: ${{ secrets.GIMLET_TOKEN }}
       with:
-        DEPLOY: "true"
         ENV: "zeta-dev"
         APP: "expressjs-test-app"
