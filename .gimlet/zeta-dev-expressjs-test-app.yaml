@@ -7,12 +7,22 @@ chart:
   version: 0.64.0
 values:
   containerPort: 3000
+  description: Testing
+  documentation: ""
   gitRepository: SorsOps/expressjs-test-app
   gitSha: '{{ .SHA }}'
   image:
+    dockerfile: Dockerfile
     repository: 127.0.0.1:32447/{{ .APP }}
     tag: '{{ .SHA }}'
   imagePullSecrets: []
+  issues: https://github.com/SorsOps/expressjs-test-app/issues
+  logs: ""
+  metrics: ""
+  name: Express test
+  ownerIm: ""
+  ownerName: Me
   replicas: 1
   resources:
     ignoreLimits: true
+  traces: ""
