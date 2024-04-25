@@ -12,10 +12,11 @@ values:
   gitRepository: SorsOps/expressjs-test-app
   gitSha: '{{ .SHA }}'
   image:
-    dockerfile: Dockerfile
-    repository: 127.0.0.1:32447/{{ .APP }}
+    dockerfile: ""
+    repository: ghcr.io/SorsOps /expressjs-test-app
     tag: '{{ .SHA }}'
-  imagePullSecrets: []
+  imagePullSecrets:
+    - ghcr-login-secret
   issues: https://github.com/SorsOps/expressjs-test-app/issues
   logs: ""
   metrics: ""
