@@ -30,8 +30,10 @@ jobs:
       id: meta
       uses: docker/metadata-action@v5
       with:
+        tags: |
+          type=semver,pattern={{raw}}
         images: |
-          ghcr.io/${{ vars.GITHUB_REPOSITORY}}
+          ghcr.io/SorsOps/expressjs-test-app
 
     - name: Publish Docker images
       uses: docker/build-push-action@v5
