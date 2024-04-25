@@ -1,0 +1,20 @@
+app: expressjs-test-app-21e7
+env: zeta-dev
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.64.0
+values:
+  containerPort: 3000
+  gitRepository: SorsOps/expressjs-test-app
+  gitSha: '{{ .SHA }}'
+  image:
+    dockerfile: ""
+    repository: ghcr.io/SorsOps/expressjs-test-app
+    tag: '{{ .SHA }}'
+  imagePullSecrets:
+    - ghcr-login-secret
+  replicas: 1
+  resources:
+    ignoreLimits: true
