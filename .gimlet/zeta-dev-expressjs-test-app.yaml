@@ -18,3 +18,4 @@ values:
   replicas: 1
   resources:
     ignoreLimits: true
+  issues: https://github.com/SorsOps/expressjs-test-app/issues

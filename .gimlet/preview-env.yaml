@@ -1,0 +1,26 @@
+app: expressjs-test-app-preview-{{ .BRANCH | sanitizeDNSName }}
+namespace: dev
+env: zeta-dev
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.64.0
+deploy:
+  event: pr
+cleanup:
+  event: branchDeleted
+  app: expressjs-test-app-preview-{{ .BRANCH | sanitizeDNSName }}
+values:
+  gitRepository: SorsOps/expressjs-test-app
+  gitSha: '{{ .SHA }}'
+  image:
+    repository: ghcr.io/sorsops/expressjs-test-app
+    tag: '{{ .SHA  }}'
+  resources:
+    ignoreLimits: true
+  containerPort: 3000
+  imagePullSecrets: []
+  replicas: 1
+  name: Preview
+  description: Shortlived preview env
+  issues: https://github.com/SorsOps/expressjs-test-app/issues
