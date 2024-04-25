@@ -30,8 +30,6 @@ jobs:
       id: meta
       uses: docker/metadata-action@v5
       with:
-        tags: |
-          type=sha,format=long,prefix=
         images: |
           ghcr.io/${{ vars.GITHUB_REPOSITORY}}
 
