@@ -1,0 +1,27 @@
+app: expressjs-test-app-preview
+env: nearby-smoke
+preview: true
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.70.0
+values:
+  containerPort: 3000
+  gitRepository: gimlet-io/expressjs-test-app
+  gitSha: '{{ .SHA }}'
+  image:
+    registry: customRegistry
+    repository: registry.gimlet:30003/gimlet-iodhdrqinc/{{ .APP }}
+    strategy: buildpacks
+    tag: '{{ .SHA }}'
+  imagePullSecrets:
+    - '{{ .APP }}-customregistry-pullsecret'
+  ingress:
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt
+      kubernetes.io/ingress.class: nginx
+    host: gimlet-io-expressjs-test-app-dhdrqinc.gimlet.app
+    tlsEnabled: true
+  resources:
+    ignoreLimits: true
